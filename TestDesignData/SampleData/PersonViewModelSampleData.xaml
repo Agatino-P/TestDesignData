@@ -1,7 +1,10 @@
-﻿<TestDesignData:PersonViewModel xmlns:System="clr-namespace:System;assembly=mscorlib"
-                                xmlns:TestDesignData="clr-namespace:TestDesignData"
-                                Name="Aliquam cras" Age="34" IsInDesignMode="True"
-                                IsInDesignModeStatic="False">
+﻿<TestDesignData:PersonViewModel
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:TestDesignData="clr-namespace:TestDesignData"
+    Name="Aliquam cras"
+    Age="34"
+    IsInDesignMode="True"
+    IsInDesignModeStatic="False">
     <TestDesignData:PersonViewModel.Strings>
         <System:String>Vestibulum class</System:String>
         <System:String>Curae sed dis est duis</System:String>
