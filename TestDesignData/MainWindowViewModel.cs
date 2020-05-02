@@ -9,6 +9,9 @@ namespace TestDesignData
         private BindingList<PersonViewModel> _persons = new BindingList<PersonViewModel>();
         public BindingList<PersonViewModel> Persons { get => _persons; set => Set(() => Persons, ref _persons, value); }
 
+        private BindingList<PersonModel> _personMs = new BindingList<PersonModel>();
+        public BindingList<PersonModel> PersonMs { get => _personMs; set => Set(() => PersonMs, ref _personMs, value); }
+
         public MainWindowViewModel()
         {
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject()))
@@ -19,12 +22,13 @@ namespace TestDesignData
             }
             else
             {
+                PersonModel newPersonModel = new PersonModel() { Agex10 = 10, Name = "uno" };
+                PersonMs.Add(newPersonModel);
+                Persons.Add(PersonViewModel.FromPersonModel(newPersonModel));
 
-                Persons.Add(PersonViewModel.FromPersonModel(new PersonModel() { Agex10 = 10, Name = "uno" }));
-                Persons.Add(PersonViewModel.FromPersonModel(new PersonModel() { Agex10 = 20, Name = "due" }));
-                Persons.Add(PersonViewModel.FromPersonModel(new PersonModel() { Agex10 = 30, Name = "tre" }));
-                Persons.Add(PersonViewModel.FromPersonModel(new PersonModel() { Agex10 = 40, Name = "quattro" }));
-                Persons.Add(PersonViewModel.FromPersonModel(new PersonModel() { Agex10 = 50, Name = "cinque" }));
+                newPersonModel = new PersonModel() { Agex10 = 20, Name = "due" };
+                PersonMs.Add(newPersonModel);
+                Persons.Add(PersonViewModel.FromPersonModel(newPersonModel));
             }
 
 
