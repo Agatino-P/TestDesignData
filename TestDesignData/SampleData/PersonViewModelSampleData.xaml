@@ -1,0 +1,20 @@
+﻿<TestDesignData:PersonViewModel xmlns:System="clr-namespace:System;assembly=mscorlib"
+                                xmlns:TestDesignData="clr-namespace:TestDesignData"
+                                Name="Aliquam cras" Age="34" IsInDesignMode="True"
+                                IsInDesignModeStatic="False">
+    <TestDesignData:PersonViewModel.Strings>
+        <System:String>Vestibulum class</System:String>
+        <System:String>Curae sed dis est duis</System:String>
+        <System:String>Donec aenean</System:String>
+        <System:String>Curabitur phasellus consequat adipiscing</System:String>
+        <System:String>Mauris integer praesent</System:String>
+        <System:String>Quisque parturient</System:String>
+        <System:String>Nunc etiam amet hac ante</System:String>
+        <System:String>Convallis leo nullam</System:String>
+        <System:String>Aptent accumsan vestibulum vestibulum</System:String>
+        <System:String>Dignissim mus fusce vivamus</System:String>
+    </TestDesignData:PersonViewModel.Strings>
+    <TestDesignData:PersonViewModel._personModel>
+        <TestDesignData:PersonModel Name="Nam maecenas" Agex10="55" />
+    </TestDesignData:PersonViewModel._personModel>
+</TestDesignData:PersonViewModel>
